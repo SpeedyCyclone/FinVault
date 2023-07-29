@@ -1,0 +1,21 @@
+.hamburger {
+  display: none;
+  padding: 0.1rem;
+  margin-left: 1rem;
+  font-size: 1.9rem;
+  border: none;
+}
+
+@media (max-width: 1440px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .hamburger {
+    display: flex;
+    margin-left: 300px;
+    position: absolute;
+  }
+}
