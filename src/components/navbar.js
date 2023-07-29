@@ -1,8 +1,11 @@
 import styles from "../styles/Navbar.module.css";
 import Link from "next/link";
 import Hamburger from "../components/hamburger";
+import { signIn } from "next-auth/react";
+import { useSession } from "next-auth/react";
 
 export default function Navbar() {
+  const { data: session, status } = useSession();
   return (
     <>
       <div className={styles.flex}>
@@ -25,9 +28,19 @@ export default function Navbar() {
             </Link>
           </ul>
         </nav>
-        <Link href="/login" className={styles.special}>
-          <li>Epsilon</li>
-        </Link>
+        {status === "authenticated" ? (
+          <Link href="/profile" className={styles.special}>
+            <li>Epsilon</li>
+          </Link>
+        ) : (
+          <Link
+            href="/api/auth/signin"
+            className={styles.special}
+            onClick={() => signIn(undefined, { callbackUrl: "/profile" })}
+          >
+            <li>Epsilon</li>
+          </Link>
+        )}
         <Hamburger />
       </div>
     </>

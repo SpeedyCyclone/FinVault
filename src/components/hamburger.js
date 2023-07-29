@@ -25,28 +25,30 @@ const Hamburger = () => {
       </button>
 
       {toggle && (
-        <div className="navbar mobile-nav">
-          <div className="mobile-items">
-            <div className="links link-items">
-              <Link href="/" className="link link-item">
-                Home
-              </Link>
-              <Link href="/about" className="link link-item">
-                About
-              </Link>
-              <Link href="/products" className="link link-item">
-                Products
-              </Link>
-              <Link href="/contact" className="link link-item">
-                Contact
-              </Link>
+        <center>
+          <div className="navbar mobile-nav">
+            <div className="mobile-items">
+              <div className="links link-items">
+                <Link href="/" className="link link-item">
+                  Home
+                </Link>
+                <Link href="/about" className="link link-item">
+                  About
+                </Link>
+                <Link href="/products" className="link link-item">
+                  Products
+                </Link>
+                <Link href="/contact" className="link link-item">
+                  Contact
+                </Link>
 
-              <Link href="/api/auth/signin" className="link link-item">
-                Epsilon
-              </Link>
+                <Link href="/api/auth/signin" className="link link-item">
+                  Epsilon
+                </Link>
+              </div>
             </div>
           </div>
-        </div>
+        </center>
       )}
     </>
   );
