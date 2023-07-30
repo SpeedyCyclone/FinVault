@@ -8,6 +8,7 @@ export default function Document() {
           href="https://fonts.googleapis.com/css?family=Outfit&display=swap"
           rel="stylesheet"
         />
+        <link href="https://fonts.cdnfonts.com/css/bogart" rel="stylesheet" />
       </Head>
       <body>
         <Main />
