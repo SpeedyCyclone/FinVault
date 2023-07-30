@@ -10,18 +10,12 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  background-image: url("/background.svg");
+  background-color: #131313;
+  overflow: hidden;
 }
 
 ul {
   list-style: none;
-}
-
-.navbar {
-  display: flex;
-  justify-content: center;
-  padding: 2% 3%;
-  align-items: center;
 }
 
 .link {

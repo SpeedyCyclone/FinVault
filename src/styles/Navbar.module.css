@@ -11,12 +11,12 @@
 
 .heading {
   float: left;
-  margin-left: 20px;
+  margin-left: 50px;
   padding: 10px;
-  -webkit-text-stroke: 1px crimson;
-  color: red;
-  font-weight: bold;
-  font-size: 40px;
+  border-radius: 10px;
+  margin-top: 10px;
+  height: auto;
+  width: 225px;
 }
 
 .navbar ul li {
@@ -73,6 +73,7 @@
   background-size: 0% 2px;
   background-repeat: no-repeat;
   transition: background-size 0.5s, background-position 0s 0.5s;
+  margin-top: 30px;
 }
 
 @media (max-width: 700px) {
@@ -80,4 +81,8 @@
   .special {
     display: none;
   }
+}
+
+.navbar {
+  margin-top: 30px;
 }

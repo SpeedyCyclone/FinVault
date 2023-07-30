@@ -1,5 +1,6 @@
 import styles from "../styles/Navbar.module.css";
 import Link from "next/link";
+import Image from "next/image";
 import Hamburger from "../components/hamburger";
 import { signIn } from "next-auth/react";
 import { useSession } from "next-auth/react";
@@ -10,7 +11,14 @@ export default function Navbar() {
     <>
       <div className={styles.flex}>
         <Link href="/">
-          <h1 className={styles.heading}>NutriBoom</h1>
+          <Image
+            className={styles.heading}
+            alt=""
+            src="/logo.svg"
+            priority="true"
+            height={0}
+            width={0}
+          />
         </Link>
         <nav className={styles.navbar}>
           <ul>
