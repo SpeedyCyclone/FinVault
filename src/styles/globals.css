@@ -1,7 +1,3 @@
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   margin: 0;
   box-sizing: border-box;
@@ -11,7 +7,13 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #131313;
-  overflow: hidden;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 ul {
@@ -78,4 +80,12 @@ ul {
     margin: 10px;
     font-size: 20px;
   }
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+::placeholder {
+  font-family: "Outfit";
 }

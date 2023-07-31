@@ -1,7 +1,7 @@
 @import url("https://fonts.cdnfonts.com/css/bogart");
 
 .image {
-  margin-top: 55px;
+  margin-top: 50px;
   border: 10px solid crimson;
   overflow: hidden;
   object-fit: cover;
@@ -30,7 +30,7 @@
 }
 
 .para {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 600;
   margin-left: 20px;
   padding-right: 10px;
@@ -41,7 +41,7 @@
   font-size: 60px;
   font-weight: 800;
   margin-top: 60px;
-  -webkit-text-stroke: 2px red;
+  -webkit-text-stroke: 2px crimson;
   color: white;
   margin-left: 20px;
   font-family: "Bogart", sans-serif;
@@ -51,4 +51,80 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 150px;
+}
+
+.flex1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-top: 150px;
+}
+
+.goalsdiv {
+  margin: 50px;
+}
+
+.goals {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Bogart", sans-serif;
+  font-weight: bold;
+}
+
+.text {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.line {
+  border-left: 6px solid crimson;
+  height: 275px;
+}
+
+.flex2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  height: 300px;
+  width: 300px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 50px;
+  border-radius: 10%;
+  border: 5px solid white;
+}
+
+.team {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Bogart", sans-serif;
+  color: white;
+  font-weight: bold;
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 50%;
+}
+
+.name {
+  font-size: 25px;
+  text-align: center;
+  color: white;
+  margin: 20px;
+}
+
+.role {
+  font-size: 20px;
+  text-align: center;
+  color: white;
 }
