@@ -9,7 +9,7 @@ export default function Document() {
           rel="stylesheet"
         />
         <link href="https://fonts.cdnfonts.com/css/bogart" rel="stylesheet" />
-        <link rel="icon" type="image/x-icon" href="/logo.svg" />
+        <link rel="icon" type="image/x-icon" href="/logo.png" />
       </Head>
       <body>
         <Main />

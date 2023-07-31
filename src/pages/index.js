@@ -1,28 +1,32 @@
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
+import Head from "next/head";
 
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>NutriBoom</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
       <div className={styles.flex}>
         <div className={styles.banner}>
-          <Image
-            src="/banner.png"
-            alt=""
+          <video
+            src="/video.mp4"
+            className={styles.image}
             height={350}
             width={600}
-            className={styles.image}
-            priority="true"
-          ></Image>
+            autoPlay
+            muted
+          ></video>
+
           <h1 className={styles.heading}>NutriBoom</h1>
           <p className={styles.para}>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique
-            ipsam perferendis neque! Excepturi est hic error nam deserunt
-            provident natus dicta ab? Distinctio beatae inventore magni, itaque
-            adipisci perferendis fugit. Inventore, in dolorem! Tenetur
-            molestias, quidem temporibus maxime explicabo eum sunt excepturi
-            quam rem exercitationem assumenda repellendus in, quae maiores
-            aliquam neque.
+            At NutriBoom, we believe in transformation, not just in the body but
+            in the spirit. Founded by David and Debbie Stovelman, our journey
+            has been one of resilience and rebirth. After overcoming adversity,
+            we emerge stronger and wiser, ready to bring positive change to
+            lives. We strive to reshape the world of wellness.
           </p>
         </div>
       </div>
@@ -30,27 +34,23 @@ export default function Home() {
         <div className={styles.goalsdiv}>
           <h1 className={styles.goals}>Our Goals</h1>
           <p className={styles.text}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore in
-            blanditiis unde modi praesentium sequi corrupti excepturi sed
-            accusantium tempore eaque inventore non fugit, vitae nisi quibusdam
-            aliquam hic necessitatibus! Molestiae quo consequuntur quos maiores
-            dolores aspernatur ducimus at eos autem voluptatibus ipsa tenetur
-            debitis vel fuga quae beatae ullam esse, quis doloremque, dolorum
-            necessitatibus minus atque minima? Deserunt, iusto?
+            NutriBooms goal is to empower holistic wellness, promoting positive
+            transformations through mindful nourishment. We foster a supportive
+            community, encourage innovation, and prioritize sustainable
+            practices to inspire personal growth and well-being. Join us on a
+            transformative journey towards a balanced and fulfilled life.
           </p>
         </div>
         <div className={styles.line}></div>
         <div className={styles.goalsdiv}>
           <h1 className={styles.goals}>Our Origin</h1>
           <p className={styles.text}>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores ex
-            doloremque ipsum natus laboriosam eos temporibus numquam, placeat
-            quis! Sapiente mollitia magni quasi architecto doloribus cupiditate
-            consequatur assumenda, quia quos. Quisquam corporis saepe optio
-            mollitia reprehenderit similique minus delectus eum iste, accusamus
-            quasi praesentium animi porro nemo perspiciatis tempore consequatur
-            eius neque, quis illum magnam, qui itaque? Veniam, sapiente
-            voluptate!
+            NutriBoom, founded by the pioneering couple Mr. and Mrs. Stovelman,
+            is rooted in tenacity and passion. It empowers holistic wellness,
+            reflecting their transformative journey. A symbol of hope, NutriBoom
+            unites a thriving community on a path to a happier and enlightened
+            future. Embrace the magic of NutriBooms genesis as we embark on a
+            transformative well-being journey together.
           </p>
         </div>
       </div>

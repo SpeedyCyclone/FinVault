@@ -55,7 +55,7 @@
   background: white;
   color: black;
   border: none;
-  border-radius: 2px;
+  border-radius: 10px;
   font-weight: bold;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -63,9 +63,11 @@
   margin-top: 20px;
 }
 
-.button[type="submit"]:focus,
+.button[type="submit"]:hover,
 .button[type="submit"]:active {
-  outline: none;
+  background-color: #14dc46;
+  color: white;
+  transition: ease-in 0.3s;
 }
 
 .inputgroup textarea {

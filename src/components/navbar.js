@@ -4,9 +4,13 @@ import Image from "next/image";
 import Hamburger from "../components/hamburger";
 import { signIn } from "next-auth/react";
 import { useSession } from "next-auth/react";
+import { useRouter } from 'next/router'
+
 
 export default function Navbar() {
+  const router = useRouter()
   const { data: session, status } = useSession();
+
   return (
     <>
       <div className={styles.flex}>
@@ -16,8 +20,8 @@ export default function Navbar() {
             alt=""
             src="/logo.svg"
             priority="true"
-            height={0}
-            width={0}
+            height={50}
+            width={50}
           />
         </Link>
         <nav className={styles.navbar}>
@@ -25,7 +29,7 @@ export default function Navbar() {
             <Link href="/" className="link">
               <li>Home</li>
             </Link>
-            <Link href="/about" className="link">
+            <Link href="/about" className="link" >
               <li>About</li>
             </Link>
             <Link href="/products" className="link">

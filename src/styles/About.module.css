@@ -13,3 +13,28 @@
   color: white;
   margin: 50px;
 }
+
+.image {
+  border: 10px solid #14dc46;
+  overflow: hidden;
+  object-fit: cover;
+  transition: transform 200ms ease-in;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.image:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width: 700px) {
+  .image {
+    width: 95%;
+    height: auto;
+  }
+}
