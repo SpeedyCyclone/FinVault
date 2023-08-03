@@ -45,7 +45,7 @@ export default function About() {
 
                 <div className={styles.left}>
                     <p className={styles.heading_2}>Expore our products</p>
-                    <p className={styles.text}>Introducing Kiwi Herbal Squeez Juice, a nutrient-rich elixir packed with nature's finest! Bursting with vitamins, minerals, and antioxidants, this revitalizing blend is a must-have for your well-being. Quench your thirst and embrace the goodness today! 🥝🌿🍹</p>
+                    <p className={styles.text}>Introducing Kiwi Herbal Squeez Juice, a nutrient-rich elixir packed with nature finest! Bursting with vitamins, minerals, and antioxidants, this revitalizing blend is a must-have for your well-being. Quench your thirst and embrace the goodness today! 🥝🌿🍹</p>
                     <Link href="/products"><button className={styles.btn}>View other products →</button></Link>
                 </div>
 
