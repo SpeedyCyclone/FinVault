@@ -5,18 +5,27 @@
   align-items: center;
   justify-content: space-between;
   align-self: center;
-  margin-right: 20px;
+  padding: 25px 70px;
   margin-top: 5px;
 }
 
-.heading {
-  float: left;
-  margin-left: 50px;
-  padding: 10px;
-  border-radius: 10px;
-  margin-top: 10px;
+.flex > div {
+  flex: 1;
+}
+
+.logo {
   height: auto;
-  width: 225px;
+  width: 175px;
+}
+.navbar {
+  flex: 1;
+}
+
+.navbar ul {
+  display: flex;
+  align-self: center;
+  padding: 0;
+  margin: 0;
 }
 
 .navbar ul li {
@@ -24,25 +33,20 @@
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-left: 40px;
-  margin-right: 40px;
+
   text-align: center;
   color: white;
   font-size: 20px;
-  font-weight: 600;
-  padding: 15px;
-  padding-bottom: 10px;
+  font-weight: 200;
+  font-family: "Outfit";
+
+  margin: 0px 20px;
+  padding: 10px 15px;
   background-image: linear-gradient(#fff 0 0);
   background-position: 0 100%;
   background-size: 0% 2px;
   background-repeat: no-repeat;
   transition: background-size 0.5s, background-position 0s 0.5s;
-}
-
-.navbar ul {
-  display: flex;
-  align-self: center;
-  width: 100%;
 }
 
 .navbar ul li:hover,
@@ -54,26 +58,26 @@
 }
 
 .special {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin-left: 40px;
-  margin-right: 40px;
+  width: 100px;
+
   text-align: center;
   color: white;
   font-size: 20px;
-  font-weight: 600;
-  padding: 10px;
-  list-style: none;
+  font-weight: 400;
+  line-height: 200%;
   text-decoration: none;
-  padding-bottom: 10px;
+
+  /* margin-top: 30px;
+  margin-left: 40px;
+  margin-right: 40px;
+  padding: 10px;
+  padding-bottom: 10px; */
+
   background-image: linear-gradient(#fff 0 0);
   background-position: 0 100%;
   background-size: 0% 2px;
   background-repeat: no-repeat;
   transition: background-size 0.5s, background-position 0s 0.5s;
-  margin-top: 30px;
 }
 
 @media (max-width: 700px) {
@@ -81,8 +85,27 @@
   .special {
     display: none;
   }
-}
 
-.navbar {
-  margin-top: 30px;
+  .flex {
+    padding: 20px 30px;
+  }
+
+  .flex > div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex: none;
+  }
+}
+@media (max-width: 400px) {
+  .flex {
+    padding: 20px 20px;
+  }
+
+  .flex > div {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    flex: none;
+  }
 }
