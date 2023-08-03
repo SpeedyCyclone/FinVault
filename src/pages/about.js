@@ -1,6 +1,8 @@
 import styles from "../styles/About.module.css";
 import Image from "next/image";
 import Head from "next/head";
+import Link from "next/link";
+
 
 export default function About() {
     return (
@@ -38,6 +40,23 @@ export default function About() {
                     anxiety, and foster overall well-being</span>, supporting you on your journey
                 to a more balanced and fulfilled life.
             </p>
+
+            <div className={styles.bottom}>
+
+                <div className={styles.left}>
+                    <p className={styles.heading_2}>Expore our products</p>
+                    <p className={styles.text}>Introducing Kiwi Herbal Squeez Juice, a nutrient-rich elixir packed with nature's finest! Bursting with vitamins, minerals, and antioxidants, this revitalizing blend is a must-have for your well-being. Quench your thirst and embrace the goodness today! 🥝🌿🍹</p>
+                    <Link href="/products"><button className={styles.btn}>View other products →</button></Link>
+                </div>
+
+                <Image
+                    src="/product2.png"
+                    alt=""
+                    className={styles.img}
+                    height={350}
+                    width={600}
+                />
+            </div >
         </>
     );
 }
