@@ -10,6 +10,10 @@ export default function Document() {
         />
         <link href="https://fonts.cdnfonts.com/css/bogart" rel="stylesheet" />
         <link rel="icon" type="image/x-icon" href="/logo.png" />
+        <link
+          href="https://fonts.googleapis.com/css?family=Delius Swash Caps&display=swap"
+          rel="stylesheet"
+        ></link>
       </Head>
       <body>
         <Main />

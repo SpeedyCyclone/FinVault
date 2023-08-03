@@ -1,10 +1,6 @@
 import NextAuth from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
-import { PrismaAdapter } from "@next-auth/prisma-adapter";
-import { PrismaClient } from "@prisma/client";
 import GithubProvider from "next-auth/providers/github";
-
-const prisma = new PrismaClient();
 
 export default NextAuth({
   providers: [
@@ -19,7 +15,6 @@ export default NextAuth({
       checks: ["none"],
     }),
   ],
-  adapter: PrismaAdapter(prisma),
   cookies: {
     csrfToken: {
       name: "next-auth.csrf-token",

@@ -10,10 +10,12 @@
   padding: 12px;
   gap: 50px;
 }
+
 .img {
   height: auto;
   width: 100%;
 }
+
 .bottom {
   flex: 1;
   width: 100%;
@@ -22,25 +24,28 @@
   justify-content: space-between;
   align-items: flex-end;
 }
+
 .type {
   color: #131313;
-  font-family: "bogart";
-  font-size: 25px;
+  font-family: "Outfit";
+  font-size: 20px;
   font-weight: 600;
   padding: 0;
   margin: 0;
 }
+
 .varient {
   color: #131313;
-  font-family: "outfit";
+  font-family: "Outfit";
   font-size: 14px;
   font-weight: 300;
   padding: 0;
   margin: 0;
 }
+
 .price {
   color: #131313;
-  font-family: "bogart";
+  font-family: "Outfit";
   font-size: 20px;
   font-weight: 600;
   padding: 0;
