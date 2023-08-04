@@ -160,6 +160,11 @@
   }
 
   .heading {
+    width: 100%;
+    text-align: center;
+  }
+
+  .para {
     text-align: center;
   }
 }

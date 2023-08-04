@@ -104,8 +104,6 @@
     height: auto;
   }
   .text {
-    display: flex;
-    flex-wrap: wrap;
     width: auto;
     height: auto;
   }
@@ -143,6 +141,7 @@
   }
   .text {
     margin: 20px;
+    text-align: center;
   }
   .left > .text {
     text-align: center;

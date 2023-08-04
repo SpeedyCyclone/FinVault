@@ -49,7 +49,7 @@ export default function About() {
                 <div className={styles.bottom}>
 
                     <div className={styles.left}>
-                        <p className={styles.heading_2}>Expore our products</p>
+                        <p className={styles.heading_2}>Explore our products</p>
                         <p className={styles.text}>
                             Introducing Kiwi Herbal Squeez Juice, a nutrient-rich elixir
                             packed with nature finest! Bursting with vitamins, minerals, and
