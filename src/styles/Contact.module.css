@@ -67,7 +67,7 @@
 .button[type="submit"]:active {
   background-color: #14dc46;
   color: white;
-  transition: ease-in 0.3s;
+  transition: ease-in 0.2s;
 }
 
 .inputgroup textarea {
@@ -99,5 +99,11 @@
   .inputgroup textarea {
     width: 100%;
     margin-top: 0;
+  }
+  .flex {
+    padding: 0 30px;
+  }
+  .button {
+    width: 100%;
   }
 }

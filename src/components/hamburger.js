@@ -29,20 +29,39 @@ const Hamburger = () => {
           <div className="navbar mobile-nav">
             <div className="mobile-items">
               <div className="links link-items">
-                <Link href="/" className="link link-item">
+                <Link
+                  href="/"
+                  className="link link-item"
+                  onClick={() => setToggle(!toggle)}
+                >
                   Home
                 </Link>
-                <Link href="/about" className="link link-item">
+                <Link
+                  href="/about"
+                  className="link link-item"
+                  onClick={() => setToggle(!toggle)}
+                >
                   About
                 </Link>
-                <Link href="/products" className="link link-item">
+                <Link
+                  href="/products"
+                  className="link link-item"
+                  onClick={() => setToggle(!toggle)}
+                >
                   Products
                 </Link>
-                <Link href="/contact" className="link link-item">
+                <Link
+                  href="/contact"
+                  className="link link-item"
+                  onClick={() => setToggle(!toggle)}
+                >
                   Contact
                 </Link>
-
-                <Link href="/api/auth/signin" className="link link-item">
+                <Link
+                  href="/api/auth/signin"
+                  className="link link-item"
+                  onClick={() => setToggle(!toggle)}
+                >
                   Epsilon
                 </Link>
               </div>
