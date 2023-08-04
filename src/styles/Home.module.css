@@ -1,69 +1,50 @@
-.image {
-  margin-top: 50px;
-  float: right;
-  align-content: center;
-  margin-left: 80px;
-}
-
-@media (max-width: 1000px) {
-  .image {
-    width: 100%;
-    height: 100%;
-    margin-bottom: 50px;
-  }
-  .flex1 {
-    padding-top: 300px;
-    flex-wrap: wrap;
-  }
-  .goals {
-    text-align: center;
-  }
-  .line {
-    transform: rotate(90deg);
-    margin: 0;
-  }
-  .goalsdiv {
-    width: auto;
-    flex-wrap: wrap;
-  }
-  .flex2 {
-    flex-wrap: wrap;
-  }
-  .heading {
-    text-align: center;
-  }
-}
-
 .banner {
-  width: 90%;
-  margin-top: 10px;
-  height: 300px;
-  border-radius: 10px;
+  width: 100%;
+  margin-top: 50px;
+  padding: 0 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 75px;
+  margin-bottom: 100px;
+}
+
+.bannerLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+  width: 50%;
 }
 
 .para {
   font-size: 19px;
   font-weight: 300;
-  margin-left: 20px;
-  padding-right: 10px;
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(255, 255, 255, 0.8);
   text-align: justify;
+  margin: 0;
+  padding: 0;
 }
 
 .heading {
   font-family: "Delius Swash Caps";
   font-size: 50px;
-  font-weight: 700;
+  font-weight: 400;
   color: white;
-  margin-left: 20px;
-  margin-top: 60px;
+  margin: 0;
+  padding: 0;
+}
+
+.image {
+  width: 50%;
 }
 
 .flex {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 150px;
 }
 
 .flex1 {
@@ -71,17 +52,14 @@
   align-items: center;
   justify-content: center;
   color: white;
-  margin-top: 150px;
-}
-
-.goalsdiv {
-  margin: 50px;
+  gap: 50px;
+  padding: 0px 50px;
 }
 
 .goals {
+  font-family: "Bogart", sans-serif;
   text-align: center;
   font-size: 30px;
-  font-family: "Bogart", sans-serif;
   font-weight: bold;
 }
 
@@ -89,7 +67,7 @@
   text-align: justify;
   font-size: 19px;
   font-weight: 300;
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .line {
@@ -101,15 +79,14 @@
 
 .flex2 {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  gap: 50px;
 }
 
 .card {
-  height: 300px;
-  width: 300px;
-  margin-left: 100px;
-  margin-right: 100px;
+  min-height: 300px;
+  min-width: 300px;
   margin-top: 50px;
   border-radius: 10%;
   box-shadow: 2px 2px 25px rgba(255, 255, 255, 0.1);
@@ -144,4 +121,74 @@
   font-size: 20px;
   text-align: center;
   color: white;
+}
+
+@media (max-width: 1000px) {
+  .banner {
+    flex-direction: column;
+  }
+
+  .bannerLeft {
+    width: 90%;
+  }
+
+  .image {
+    width: 75%;
+  }
+
+  .flex1 {
+    flex-direction: column;
+    padding: 0 75px;
+    gap: 30px;
+  }
+
+  .line {
+    border-left: none;
+    border-bottom: 6px solid rgba(255, 255, 255, 0.15);
+    width: 66%;
+    min-width: 300px;
+    height: 6px;
+    border-radius: 6px;
+  }
+
+  .text {
+    text-align: center;
+  }
+
+  .flex2 {
+    flex-direction: column;
+  }
+
+  .heading {
+    text-align: center;
+  }
+}
+
+@media (max-width: 550px) {
+  .banner {
+    flex-direction: column;
+    padding: 0 20px;
+    gap: 35px;
+  }
+
+  .flex1 {
+    padding: 0 20px;
+  }
+
+  .bannerLeft {
+    width: 95%;
+  }
+
+  .image {
+    width: 90%;
+  }
+
+  .line {
+    border-left: none;
+    border-bottom: 6px solid rgba(255, 255, 255, 0.15);
+    width: 90%;
+    min-width: auto;
+    height: 6px;
+    border-radius: 6px;
+  }
 }
