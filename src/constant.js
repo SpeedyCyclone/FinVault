@@ -2,28 +2,28 @@ export const products = [
     {
         name: "NutriJelly",
         type: "Green Apple Zesty Zing 100g",
-        price: "₹75",
+        price: "₹45",
         desc: "NutriJelly is a superfood that is multivitamin and nutrient loaded and is available in 4 delectable flavors: Mango Tropical Tango, Blueberry Berry Bliss, Cranberry Ruby Burst, and Green Apple Zesty Zing. NutriJelly can help you improve your mood, boost your confidence, and spiritually nourish you.",
         image: "/products/green_jelly_cup.png"
     },
     {
         name: "NutriJelly",
         type: "Mango Tropical Tango 100g",
-        price: "₹75",
+        price: "₹45",
         desc: "NutriJelly is a superfood that is multivitamin and nutrient loaded and is available in 4 delectable flavors: Mango Tropical Tango, Blueberry Berry Bliss, Cranberry Ruby Burst, and Green Apple Zesty Zing. NutriJelly can help you improve your mood, boost your confidence, and spiritually nourish you.",
         image: "/products/yellow_jelly_cup.png"
     },
     {
         name: "NutriJelly",
         type: "Cranberry Ruby Burst 100g",
-        price: "₹75",
+        price: "₹45",
         desc: "NutriJelly is a superfood that is multivitamin and nutrient loaded and is available in 4 delectable flavors: Mango Tropical Tango, Blueberry Berry Bliss, Cranberry Ruby Burst, and Green Apple Zesty Zing. NutriJelly can help you improve your mood, boost your confidence, and spiritually nourish you.",
         image: "/products/red_jelly_cup.png"
     },
     {
         name: "NutriJelly",
         type: "Blueberry Berry Bliss 100g",
-        price: "₹75",
+        price: "₹45",
         desc: "NutriJelly is a superfood that is multivitamin and nutrient loaded and is available in 4 delectable flavors: Mango Tropical Tango, Blueberry Berry Bliss, Cranberry Ruby Burst, and Green Apple Zesty Zing. NutriJelly can help you improve your mood, boost your confidence, and spiritually nourish you.",
         image: "/products/blue_jelly_cup.png"
     },
