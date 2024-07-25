@@ -44,11 +44,11 @@ const Hamburger = () => {
                   About
                 </Link>
                 <Link
-                  href="/products"
+                  href="/purchase"
                   className="link link-item"
                   onClick={() => setToggle(!toggle)}
                 >
-                  Products
+                  Purchase
                 </Link>
                 <Link
                   href="/contact"
@@ -62,7 +62,7 @@ const Hamburger = () => {
                   className="link link-item"
                   onClick={() => setToggle(!toggle)}
                 >
-                  Epsilon
+                  Login
                 </Link>
               </div>
             </div>

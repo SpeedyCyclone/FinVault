@@ -12,7 +12,15 @@ export default function Home() {
 
       <div className={styles.oof}>
         <h1 className={styles.heading}>FinVault</h1>
-        <p className={styles.p}>The future of Payments</p>
+        <p className={styles.p}>The Future of Payments</p>
+        <video
+          src="/video.mp4"
+          className={styles.image}
+          height={350}
+          width={600}
+          autoPlay
+          muted
+        />
       </div>
     </>
   );
