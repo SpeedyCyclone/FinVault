@@ -1,15 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Outfit";
-  height: 100vh;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  background-color: #131313;
+  background: linear-gradient(
+      117deg,
+      #150348 -20.17%,
+      #0a0123 47.67%,
+      #0a0123 115.51%,
+      #9d0666 115.52%
+    ),
+    #fff;
 }
 body > div {
   height: 100vh;
@@ -93,7 +95,13 @@ body::-webkit-scrollbar {
 }
 
 ::placeholder {
-  font-family: "Outfit";
+  font-family: "Montserrat";
+  color: #757575;
+
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .wrapper {

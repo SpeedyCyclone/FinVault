@@ -5,6 +5,7 @@
   text-align: center;
   color: white;
   margin-top: 40px;
+  font-family: "Montserrat";
 }
 
 .img {
@@ -25,6 +26,7 @@
   font-weight: 600;
   cursor: pointer;
   margin-top: 80px;
+  font-family: "Montserrat";
 }
 
 .flex {
@@ -48,6 +50,10 @@
   height: 500px;
   width: 1000px;
   margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .ok {

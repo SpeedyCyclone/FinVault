@@ -7,6 +7,7 @@ export default function Contact() {
         <title>Contact</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
+
       <h1 className={styles.heading}>Contact Us</h1>
       <div className={styles.flex}>
         <form action="/" method="POST" className={styles.form}>

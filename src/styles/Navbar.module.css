@@ -14,11 +14,13 @@
 }
 
 .logo {
-  height: auto;
-  width: 175px;
+  width: 91px;
+  height: 70.778px;
+  flex-shrink: 0;
 }
 .navbar {
   flex: 1;
+  background-color: transparent;
 }
 
 .navbar ul {
@@ -26,6 +28,7 @@
   align-self: center;
   padding: 0;
   margin: 0;
+  background-color: none;
 }
 
 .navbar ul li {
@@ -33,13 +36,6 @@
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
-
-  text-align: center;
-  color: white;
-  font-size: 20px;
-  font-weight: 200;
-  font-family: "Outfit";
-
   margin: 0px 20px;
   padding: 10px 15px;
   background-image: linear-gradient(#fff 0 0);
@@ -47,6 +43,13 @@
   background-size: 0% 2px;
   background-repeat: no-repeat;
   transition: background-size 0.5s, background-position 0s 0.5s;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 27px;
+  font-style: normal;
+  font-weight: 400;
 }
 
 .navbar ul li:hover,
@@ -58,26 +61,25 @@
 }
 
 .special {
-  width: 100px;
-
-  text-align: center;
-  color: white;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 200%;
-  text-decoration: none;
-
-  /* margin-top: 30px;
-  margin-left: 40px;
-  margin-right: 40px;
-  padding: 10px;
-  padding-bottom: 10px; */
-
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0px 20px;
+  padding: 10px 15px;
   background-image: linear-gradient(#fff 0 0);
   background-position: 0 100%;
   background-size: 0% 2px;
   background-repeat: no-repeat;
   transition: background-size 0.5s, background-position 0s 0.5s;
+
+  color: #fff;
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 27px;
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: none;
 }
 
 @media (max-width: 1000px) {
@@ -108,4 +110,8 @@
     width: 100%;
     flex: none;
   }
+}
+
+.link {
+  text-decoration: none;
 }

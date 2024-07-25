@@ -4,74 +4,65 @@ import Head from "next/head";
 import Link from "next/link";
 
 export default function About() {
-    return (
-        <>
-            <Head>
-                <title>About</title>
-                <meta name="viewport" content="width=device-width, initial-scale=1" />
-            </Head>
-            <Image
-                src="/logo.svg"
-                alt=""
-                height={75}
-                width={600}
-                className={styles.image}
-                priority="true"
-            ></Image>
+  return (
+    <>
+      <Head>
+        <title>About</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
+      <h1 className={styles.heading}>About Us</h1>
+      <div className={styles.mega}>
+        <div className={styles.text}>
+          <p className={styles.hmm}>
+            FinVault is creating a new way to make payments that is both easy
+            and very secure. We have designed a smart ring that connects to a
+            mobile app. Users can make payments by just tapping the ring on a
+            cash machine and scanning their fingerprint. This ensures the
+            process is safe and fast. The ring also has a feature to help find
+            it if it gets lost and can be blocked if needed. Our goal is to
+            solve common financial problems like security issues and slow
+            checkouts, offering customers a better and safe.
+          </p>
+        </div>
+        <div className={styles.final}>
+          <Image
+            className={styles.image}
+            alt=""
+            src="/image.png"
+            width={705}
+            height={355}
+          ></Image>
+        </div>
+      </div>
 
-            <p className={styles.text}>
-                Welcome to <span>NutriBoom</span>, where we empower you to flourish and
-                undergo a holistic transformation, encompassing your physical, mental,
-                and spiritual well-being. Our journey has been extraordinary, fueled by
-                the unwavering dedication and vision of our founders,
-                <span>Mr. and Mrs. Stovelman.</span>
-            </p>
-            <p className={styles.text}>
-                At NutriBoom, we embrace the belief that the path to growth and
-                development lies in adopting a holistic approach. This philosophy
-                permeates our values, work environment, and, most importantly, our
-                products.
-            </p>
-            <p className={styles.text}>
-                NutriBoom products are meticulously crafted and
-                <span>
-                    highly enriched with a harmonious blend of vitamins, minerals, and
-                    other essential nutrients.
-                </span>
-                Our transformative offerings are designed to
-                <span>
-                    reduce stress, alleviate anxiety, and foster overall well-being
-                </span>
-                , supporting you on your journey to a more balanced and fulfilled life.
-            </p>
+      <h1 className={styles.team}>Our Team</h1>
 
-            <div className={styles.flex}>
-                <div className={styles.bottom}>
-
-                    <div className={styles.left}>
-                        <p className={styles.heading_2}>Explore our products</p>
-                        <p className={styles.text}>
-                            Introducing Kiwi Herbal Squeez Juice, a nutrient-rich elixir
-                            packed with nature finest! Bursting with vitamins, minerals, and
-                            antioxidants, this revitalizing blend is a must-have for your
-                            well-being. Quench your thirst and embrace the goodness today!
-                            🥝🌿🍹
-                        </p>
-                        <Link href="/products">
-                            <button className={styles.btn}>View other products →</button>
-                        </Link>
-                    </div>
-
-                    <Image
-                        src="/product2.png"
-                        alt=""
-                        className={styles.img}
-                        height={350}
-                        width={600}
-                        priority="true"
-                    />
-                </div>
-            </div>
-        </>
-    );
+      <div className={styles.flex2}>
+        <div className={styles.card}>
+          <Image
+            src="/dummy.png"
+            alt=""
+            className={styles.img}
+            height={100}
+            width={100}
+            priority="true"
+          />
+          <h1 className={styles.name}>Moira Arora</h1>
+          <p className={styles.role}>Founder</p>
+        </div>
+        <div className={styles.card}>
+          <Image
+            src="/dummy.png"
+            alt=""
+            className={styles.img}
+            height={100}
+            width={100}
+            priority="true"
+          />
+          <h1 className={styles.name}>Jane Doe</h1>
+          <p className={styles.role}>CEO</p>
+        </div>
+      </div>
+    </>
+  );
 }
